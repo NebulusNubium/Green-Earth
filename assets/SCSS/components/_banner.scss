@@ -1,0 +1,4 @@
+@use "../abstract/variables" as variable;
+.banner {
+    background-color: variable.$color-secondary;
+}

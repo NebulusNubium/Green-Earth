@@ -1,0 +1,8 @@
+@use "../abstract/variables" as variable;
+@use "../abstract/mixins";
+
+
+.btn-savoir {
+    @include mixins.button;
+    background-color: variable.$color-secondary;
+}

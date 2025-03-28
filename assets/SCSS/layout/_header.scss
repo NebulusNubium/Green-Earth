@@ -1,0 +1,15 @@
+@import "../abstract/mixins";
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    .logotop {
+        width: 7%;
+        img {
+            width: 100%;
+        }
+    }
+    .btn.dontop {
+        @include button;
+    }
+}
