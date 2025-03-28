@@ -1,3 +1,14 @@
-
+@font-face {
+  font-family: "DMreg";
+  src: url(../fonts/DMsans/DMSans-Regular.ttf);
+}
+@font-face {
+  font-family: "DMbold";
+  src: url(../../fonts/DMsans/DMSans-Bold.ttf);
+}
+body {
+  margin: 0;
+  font-family: "DMreg";
+}
 
 /*# sourceMappingURL=style.css.map */

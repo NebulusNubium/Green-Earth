@@ -1,0 +1,6 @@
+@use "../abstract/variables" as variable;
+
+body {
+    margin: 0;
+    font-family: variable.$police-principale;
+}
