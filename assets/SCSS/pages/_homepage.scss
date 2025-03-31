@@ -141,3 +141,26 @@
         grid-row: 3/4;
     }
 } 
+
+#videos {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    h2 {
+        text-align: right;
+        padding-right: 4rem;
+        margin: 0.5;
+    }
+    .videos {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 10%;
+    }
+    a {
+        background-color: rgb(192, 125, 0);
+        color: white;
+        margin-left: 45%;
+        padding: 20px;
+        border-radius: 10px;
+    }
+}
