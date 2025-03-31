@@ -6,3 +6,7 @@
     @include mixins.button;
     background-color: variable.$color-secondary;
 }
+
+.projet {
+    @include mixins.card
+}

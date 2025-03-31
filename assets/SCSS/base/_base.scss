@@ -7,12 +7,16 @@ body {
 }
 
 *section, header, footer {
-    margin: 1rem 10%;
+    margin: 1rem 7%;
 }
 
+p {
+    font-size: small;
+}
 
-h1, h2, h3 {
+h1, h3 {
     font-family: variable.$police-secondaire;
+    margin: 0;
 }
 
 a {
