@@ -5,8 +5,33 @@
 .btn-savoir {
     @include mixins.button;
     background-color: variable.$color-secondary;
+    font-size: 24px;
 }
 
 .projet {
     @include mixins.card
+}
+
+.card-container {
+    @include mixins.card;
+    width:80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem 0rem;
+    .card-about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2rem 2rem;
+
+        .card-img {
+            width: 60%;
+
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+    }
 }

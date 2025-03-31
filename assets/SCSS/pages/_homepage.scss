@@ -5,18 +5,52 @@
 
 #banner {
     display: flex;
+    justify-content: space-between;
+    .banner-txt {
+        width: 50%;
+        p {
+            width: 90%;
+        }
+    }
     .banner-img {
-        width: 90%;
+        width: 50%;
         img {
             width: 100%;
             border-top-left-radius: 10px;
-            box-shadow: 8px 8px;
+            box-shadow: 8px 8px green;
         }
     }
 }
 
 .projet-container {
     display: flex;
-    gap: 1rem;
+    justify-content: center;
+    gap: 2rem;
     flex-wrap: wrap;
+}
+
+#mission {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/farmer-bg.jpg);
+    background-size: cover;
+    .card-container {
+        .card-about{
+            .card-txt {
+                width: 90%;
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 0.5rem;
+                    padding: 0;
+                    li {
+                        list-style: circle;
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
 }

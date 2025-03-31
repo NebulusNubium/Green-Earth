@@ -1,10 +1,10 @@
 @font-face {
   font-family: "DMreg";
-  src: url(../fonts/DMsans/DMSans-Regular.ttf);
+  src: url(../fonts/DMsans/DMSans-Medium.ttf);
 }
 @font-face {
   font-family: "DMbold";
-  src: url(../../fonts/DMsans/DMSans-Bold.ttf);
+  src: url(../fonts/DMsans/DMSans-SemiBold.ttf);
 }
 body {
   margin: 0;
@@ -13,16 +13,26 @@ body {
 }
 
 * section, header, footer {
-  margin: 1rem 7%;
+  margin: 1rem 10%;
 }
 
-p {
-  font-size: small;
+p, li {
+  font-size: 20px;
 }
 
 h1, h3 {
   font-family: "DMbold";
   margin: 0;
+}
+
+h1 {
+  font-size: 70px;
+  letter-spacing: 1px;
+  line-height: 90%;
+}
+
+h3 {
+  font-size: 24px;
 }
 
 a {
@@ -55,7 +65,7 @@ li {
 #header .btn.dontop {
   background-color: #284c3c;
   border-radius: 10px;
-  padding: 5px 10px;
+  padding: 15px 30px;
 }
 
 .banner {
@@ -65,14 +75,15 @@ li {
 .btn-savoir {
   background-color: #284c3c;
   border-radius: 10px;
-  padding: 5px 10px;
+  padding: 15px 30px;
   background-color: #284c3c;
+  font-size: 24px;
 }
 
 .projet {
   background-color: white;
   padding: 1.3rem;
-  width: 26%;
+  width: 29%;
   border-radius: 10px;
 }
 .projet h3 {
@@ -80,22 +91,81 @@ li {
   padding-bottom: 10px;
 }
 
+.card-container {
+  background-color: white;
+  padding: 1.3rem;
+  width: 29%;
+  border-radius: 10px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem 0rem;
+}
+.card-container h3 {
+  border-bottom: 2px solid rgb(199, 199, 199);
+  padding-bottom: 10px;
+}
+.card-container .card-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem 2rem;
+}
+.card-container .card-about .card-img {
+  width: 60%;
+}
+.card-container .card-about .card-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
 #banner {
   display: flex;
+  justify-content: space-between;
+}
+#banner .banner-txt {
+  width: 50%;
+}
+#banner .banner-txt p {
+  width: 90%;
 }
 #banner .banner-img {
-  width: 90%;
+  width: 50%;
 }
 #banner .banner-img img {
   width: 100%;
   border-top-left-radius: 10px;
-  box-shadow: 8px 8px;
+  box-shadow: 8px 8px green;
 }
 
 .projet-container {
   display: flex;
-  gap: 1rem;
+  justify-content: center;
+  gap: 2rem;
   flex-wrap: wrap;
+}
+
+#mission {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/farmer-bg.jpg);
+  background-size: cover;
+}
+#mission .card-container .card-about .card-txt {
+  width: 90%;
+}
+#mission .card-container .card-about .card-txt ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0;
+}
+#mission .card-container .card-about .card-txt ul li {
+  list-style: circle;
+  width: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
