@@ -4,15 +4,40 @@
     background-color: variable.$color-secondary;
     border-radius: 10px;
     padding: 15px 30px;
+    color: white;
 }
 
 @mixin card {
     background-color: white;
-    padding: 1.3rem;
+    padding: 2rem 1.3rem;
     width: 29%;
     border-radius: 10px;
     h3 {
         border-bottom: 2px solid rgb(199, 199, 199);
         padding-bottom: 10px;
+    }
+}
+
+@mixin article {
+    background-color: white;
+    padding: 0.5rem 0.5rem;
+    width: 30%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    a {
+        padding: 10px;
+        color: black;
+        border: 1px solid black;
+        border-radius: 30px;
+        display: inline-block;
+        width: 30%;
+    }
+    a:last-child {
+        color: goldenrod;
+        text-decoration: underline;
+        border: none;
+        margin-left: -2rem;
     }
 }

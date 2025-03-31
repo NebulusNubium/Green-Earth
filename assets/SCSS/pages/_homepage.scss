@@ -30,12 +30,14 @@
 }
 
 #mission {
-    margin: 2rem 0;
+    margin: 6rem 0;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: url(../img/farmer-bg.jpg);
     background-size: cover;
+    background-position: center;
     .card-container {
         .card-about{
             .card-txt {
@@ -45,12 +47,52 @@
                     flex-wrap: wrap;
                     gap: 0.5rem;
                     padding: 0;
+                    margin-bottom: 3rem;
                     li {
                         list-style: circle;
-                        width: 50%;
+                        width: 45%;
+                        line-height: 200%;
                     }
                 }
             }
         }
+    }
+}
+
+#actus {
+    .actu1-container {
+        display: flex;
+        .actu1-img {
+            width: 50%;
+            max-height: 35vh;
+            img { 
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+        }
+        .actu1-card {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            margin: 0 3rem 3rem 3rem;
+            padding: 3rem;
+            height: 25vh;
+            border-radius: 10px;
+        }
+    }
+    .actu2 {
+        margin-top: 10%;
+        .actu2-img {
+            width: 100%;
+            height: 20vh;
+            margin-bottom: 3rem;
+            img { 
+                width: 100%;
+                height: 100%;
+                object-fit: cover;}
+        }
+
     }
 }
